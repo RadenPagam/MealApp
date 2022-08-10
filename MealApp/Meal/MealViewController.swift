@@ -44,9 +44,9 @@ extension MealViewController:UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "recepieView") as? MealDetailViewController{
             self.navigationController?.pushViewController(vc, animated: true)
-            vc.imageHolder = meal[indexPath.row].strMealThumb ?? "none"
-            vc.titleHolder = meal[indexPath.row].strMeal ?? "none"
-            vc.idHolder = meal[indexPath.row].idMeal ?? "none"
+            vc.imageHolder = meal[indexPath.row].strMealThumb 
+            vc.titleHolder = meal[indexPath.row].strMeal 
+            vc.idHolder = meal[indexPath.row].idMeal 
         
         }
     }

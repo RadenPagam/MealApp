@@ -24,6 +24,7 @@
 		BCEA75DA28A2D84000208A34 /* MealDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEA75D928A2D84000208A34 /* MealDetail.swift */; };
 		BCEA75DC28A2ED0900208A34 /* MealDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEA75DB28A2ED0900208A34 /* MealDetailViewController.swift */; };
 		BCEA75DE28A3497B00208A34 /* NCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEA75DD28A3497B00208A34 /* NCError.swift */; };
+		BCEA75E828A35F0600208A34 /* MealDetailExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEA75E728A35F0600208A34 /* MealDetailExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		BCEA75D928A2D84000208A34 /* MealDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetail.swift; sourceTree = "<group>"; };
 		BCEA75DB28A2ED0900208A34 /* MealDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewController.swift; sourceTree = "<group>"; };
 		BCEA75DD28A3497B00208A34 /* NCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCError.swift; sourceTree = "<group>"; };
+		BCEA75E728A35F0600208A34 /* MealDetailExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				BCEA75DB28A2ED0900208A34 /* MealDetailViewController.swift */,
+				BCEA75E728A35F0600208A34 /* MealDetailExtension.swift */,
 			);
 			path = MealDetail;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				BCEA75DC28A2ED0900208A34 /* MealDetailViewController.swift in Sources */,
 				BCEA75DE28A3497B00208A34 /* NCError.swift in Sources */,
 				BCEA75D628A2CA4100208A34 /* MealTableViewCell.swift in Sources */,
+				BCEA75E828A35F0600208A34 /* MealDetailExtension.swift in Sources */,
 				BCE6F03728A2A58A0088A54E /* SceneDelegate.swift in Sources */,
 				BCE6F04F28A2AAA10088A54E /* Category.swift in Sources */,
 				BCEA75DA28A2D84000208A34 /* MealDetail.swift in Sources */,
