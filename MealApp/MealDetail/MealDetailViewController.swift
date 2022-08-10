@@ -51,19 +51,22 @@ class MealDetailViewController: UIViewController {
             self.areaLabel.text = self.mealDetail.first?.strArea
             self.tagsLabel.text = self.mealDetail.first?.strTags ?? self.mealDetail.first?.strCategory
             
-            self.textView.text = "\(self.mealDetail.first?.strInstructions ?? "")"
+            self.textView.text =
+                """
+                \(self.mealDetail.first?.strInstructions ?? "")
+                """
             
             var getIngredients =
                 """
                  \(self.mealDetail.first?.strIngredient1 ?? "") \(self.mealDetail.first?.strMeasure1 ?? "")\n , \
-                \(self.mealDetail.first?.strIngredient2 ?? "") \(self.mealDetail.first?.strMeasure2 ?? "")\n ,  \
-                \(self.mealDetail.first?.strIngredient3 ?? "") \(self.mealDetail.first?.strMeasure3 ?? "")\n ,  \
-                \(self.mealDetail.first?.strIngredient4 ?? "") \(self.mealDetail.first?.strMeasure4 ?? "")\n ,  \
-                \(self.mealDetail.first?.strIngredient5 ?? "") \(self.mealDetail.first?.strMeasure5 ?? "")\n ,  \
-                \(self.mealDetail.first?.strIngredient6 ?? "") \(self.mealDetail.first?.strMeasure6 ?? "")\n ,  \
-                \(self.mealDetail.first?.strIngredient7 ?? "") \(self.mealDetail.first?.strMeasure7 ?? "")\n ,  \
-                \(self.mealDetail.first?.strIngredient8 ?? "") \(self.mealDetail.first?.strMeasure8 ?? "")\n ,  \
-                \(self.mealDetail.first?.strIngredient9 ?? "") \(self.mealDetail.first?.strMeasure9 ?? "")\n ,  \
+                \(self.mealDetail.first?.strIngredient2 ?? "") \(self.mealDetail.first?.strMeasure2 ?? "")\n , \
+                \(self.mealDetail.first?.strIngredient3 ?? "") \(self.mealDetail.first?.strMeasure3 ?? "")\n , \
+                \(self.mealDetail.first?.strIngredient4 ?? "") \(self.mealDetail.first?.strMeasure4 ?? "")\n , \
+                \(self.mealDetail.first?.strIngredient5 ?? "") \(self.mealDetail.first?.strMeasure5 ?? "")\n , \
+                \(self.mealDetail.first?.strIngredient6 ?? "") \(self.mealDetail.first?.strMeasure6 ?? "")\n , \
+                \(self.mealDetail.first?.strIngredient7 ?? "") \(self.mealDetail.first?.strMeasure7 ?? "")\n , \
+                \(self.mealDetail.first?.strIngredient8 ?? "") \(self.mealDetail.first?.strMeasure8 ?? "")\n , \
+                \(self.mealDetail.first?.strIngredient9 ?? "") \(self.mealDetail.first?.strMeasure9 ?? "")\n , \
                 \(self.mealDetail.first?.strIngredient10 ?? "") \(self.mealDetail.first?.strMeasure10 ?? "")\n , \
                 \(self.mealDetail.first?.strIngredient11 ?? "") \(self.mealDetail.first?.strMeasure11 ?? "")\n , \
                 \(self.mealDetail.first?.strIngredient12 ?? "") \(self.mealDetail.first?.strMeasure12 ?? "")\n , \

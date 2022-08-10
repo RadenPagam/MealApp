@@ -79,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				BCEA75E228A3549300208A34 /* Support */,
-				BCEA75E028A3544200208A34 /* TableViewCell */,
 				BCEA75DF28A3542E00208A34 /* MealDetail */,
 				BCEA75D428A2C8A500208A34 /* Meal */,
 				BCEA75D128A2C7CC00208A34 /* FoodCategory */,
@@ -123,6 +122,7 @@
 		BCEA75D128A2C7CC00208A34 /* FoodCategory */ = {
 			isa = PBXGroup;
 			children = (
+				BCE6F04C28A2A8760088A54E /* FoodCategoriesTableViewCell.swift */,
 				BCE6F03828A2A58A0088A54E /* ViewController.swift */,
 			);
 			path = FoodCategory;
@@ -131,6 +131,7 @@
 		BCEA75D428A2C8A500208A34 /* Meal */ = {
 			isa = PBXGroup;
 			children = (
+				BCEA75D528A2CA4100208A34 /* MealTableViewCell.swift */,
 				BCEA75D228A2C89D00208A34 /* MealViewController.swift */,
 			);
 			path = Meal;
@@ -142,15 +143,6 @@
 				BCEA75DB28A2ED0900208A34 /* MealDetailViewController.swift */,
 			);
 			path = MealDetail;
-			sourceTree = "<group>";
-		};
-		BCEA75E028A3544200208A34 /* TableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				BCEA75D528A2CA4100208A34 /* MealTableViewCell.swift */,
-				BCE6F04C28A2A8760088A54E /* FoodCategoriesTableViewCell.swift */,
-			);
-			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		BCEA75E128A3546C00208A34 /* StoryBoard */ = {
