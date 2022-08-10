@@ -46,6 +46,42 @@ class NetworkManager{
             onCompletion(meal.meals)
         }
         task.resume()
-        
+    }
+    
+    //MARK: - Fetch Recepie
+    func fetchRecepie(id:String, onCompletion: @escaping (Result<RecepieData,ErrorMessages>)->()){
+        let urlString = "https://www.themealdb.com/api/json/v1/1/lookup.php?i=\(id)"
+        guard let url = URL(string: urlString) else{
+            onCompletion(.failure(.invalidURL))
+            return
+        }
+        print(url)
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            if let _ = error{
+                onCompletion(.failure(.unableToComplete))
+                return
+            }
+            
+            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else{
+                onCompletion(.failure(.invalidResponse))
+                return
+            }
+            
+            guard let data = data else {
+                onCompletion(.failure(.invalidData))
+                return
+            }
+            
+            do{
+                let decoder = JSONDecoder()
+                let mealDetail = try decoder.decode(RecepieData.self, from: data)
+                onCompletion(.success(mealDetail))
+                
+            }catch{
+                onCompletion(.failure(.jsonFail))
+                onCompletion(.failure(.invalidData))
+            }
+        }
+        task.resume()
     }
 }

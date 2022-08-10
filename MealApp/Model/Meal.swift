@@ -13,6 +13,7 @@ struct MealList: Codable {
 
 // MARK: - Meal
 struct Meal: Codable {
+    
     let strMeal: String
     let strMealThumb: String
     let idMeal: String

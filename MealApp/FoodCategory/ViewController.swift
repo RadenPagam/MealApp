@@ -40,7 +40,6 @@ extension ViewController:UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "detailView") as? MealViewController{
             self.navigationController?.pushViewController(vc, animated: true)
-            
             vc.foodTypeHolder = category[indexPath.row].strCategory
         }
     }
