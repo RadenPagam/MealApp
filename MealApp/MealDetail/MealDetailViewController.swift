@@ -51,10 +51,7 @@ class MealDetailViewController: UIViewController {
             self.areaLabel.text = self.mealDetail.first?.strArea
             self.tagsLabel.text = self.mealDetail.first?.strTags ?? self.mealDetail.first?.strCategory
             
-            self.textView.text =
-                """
-                \(self.mealDetail.first?.strInstructions ?? "")
-                """
+            self.textView.text = "\(self.mealDetail.first?.strInstructions ?? "")"
             
             var getIngredients =
                 """
